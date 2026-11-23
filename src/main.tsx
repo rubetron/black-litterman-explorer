@@ -18,6 +18,7 @@ import {
   readConfiguration,
 } from "./model";
 import type { Configuration, Estimator, ModelResult } from "./model";
+import logo from "./assets/systematically-biased-logo.png";
 import "./style.css";
 
 const percent = (value: number, digits = 2) =>
@@ -116,12 +117,7 @@ function App() {
     <>
       <header className="masthead">
         <a href="https://systematicallybiased.substack.com/" className="brand">
-          <span className="brand-mark">SB</span>
-          <span>
-            Systematically
-            <br />
-            <strong>Biased</strong>
-          </span>
+          <img className="brand-logo" src={logo} alt="Systematically Biased" width="891" height="687" />
         </a>
         <a
           className="article-link"
@@ -135,11 +131,12 @@ function App() {
       <main>
         <section className="intro">
           <div>
-            <p className="eyebrow">THE BLACK–LITTERMAN EXPLORER</p>
-            <h1>A model with a view.</h1>
+            <h1 className="explorer-title">The Black–Litterman Explorer</h1>
             <p className="lede">
-              Start with market equilibrium. Add your convictions.
-              <br className="desktop-break" /> See how the portfolio responds.
+              Black–Litterman starts with market-implied expected returns and
+              updates them using your investment views and confidence levels.
+              Adjust the inputs to see how expected returns and long-only
+              portfolio allocations change relative to the market benchmark.
             </p>
           </div>
           <div className="intro-actions">
