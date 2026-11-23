@@ -1,0 +1,20 @@
+{
+  "cases": 60,
+  "maximumPackageDiscrepancy": 2.220446049250313e-16,
+  "portfolioReference": "exhaustive active-set enumeration, with KKT verification",
+  "exponentialCovarianceReference": "pandas ewm(halflife=h, adjust=True).cov(bias=False)",
+  "returnTolerance": 1e-10,
+  "weightTolerance": 2e-06,
+  "portfolioStatisticTolerance": 2e-07,
+  "pythonVersions": {
+    "Python": "3.12.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "yfinance": "1.8.0",
+    "PyPortfolioOpt": "1.6.0",
+    "skfolio": "1.12.13"
+  }
+}
